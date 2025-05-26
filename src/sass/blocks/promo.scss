@@ -1,0 +1,89 @@
+.promo {
+    padding-top: 16px;
+    height: 100vh;
+    background: url(/src/img/main_bg.jpg) no-repeat center center/ cover;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navigation {
+        display: flex;
+        gap: 24px;
+
+        a {
+            font-weight: 600;
+            font-size: 18px;
+            color: #fdfdfd;
+        }
+    }
+
+    &__title {
+        padding-top: 45vh;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: #fdfdfd;
+    }
+
+    &__form {
+        margin-top: 45px;
+        width: 100%;
+        min-height: 161px;
+        backdrop-filter: blur(6px);
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+
+        &_group {
+            position: relative;
+        }
+
+        &-input {
+            width: 270px;
+            height: 52px;
+            border-radius: 8px;
+            border: 1px solid #e1e3e4;
+            background: transparent;
+            padding: 14px 16px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: #fdfdfd;
+        }
+
+        label {
+            position: absolute;
+            display: block;
+            bottom: -22px;
+            left: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #fdfdfd;
+        }
+    }
+}
+
+.promo__form-input.input-location {
+    appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat;
+    background-position: right 8px center;
+    background-size: 25px;
+    padding-right: 25px;
+}
+
+// .promo__form-input.input-participants {
+//     appearance: none;
+//     background: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat;
+//     background-position: right 8px center;
+//     background-size: 25px;
+//     padding-right: 25px;
+// }

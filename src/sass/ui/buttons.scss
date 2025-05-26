@@ -1,0 +1,42 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.btn {
+    border-radius: 4px;
+    background: $main-color;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fdfdfd;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid $main-color;
+        background: transparent;
+        color: $main-color;
+    }
+}
+
+.btn-big {
+    padding: 16px 36px;
+    min-width: 181px;
+    height: 52px;
+}
+
+.btn-small {
+    padding: 12px 24px;
+    width: 157px;
+    height: 44px;
+}
+
+.btn-light {
+    padding: 16px 36px;
+    height: 52px;
+    background: #fdfdfd;
+    color: $main-color;
+
+    &:hover {
+        border: 1px solid #fdfdfd;
+        background: transparent;
+        color: #fdfdfd;
+    }
+}
