@@ -44,6 +44,11 @@
 
         &_group {
             position: relative;
+
+            option {
+                background: rgba(255, 255, 255, 0.2);
+                color: #000000;
+            }
         }
 
         &-input {

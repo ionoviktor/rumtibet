@@ -1,0 +1,85 @@
+.impression {
+    margin-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: #f3f5f4;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    &__wrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 580px);
+        grid-template-rows: auto;
+        align-items: start;
+        column-gap: 20px;
+        row-gap: 24px;
+    }
+
+    &__card {
+        padding: 16px;
+        display: flex;
+        gap: 24px;
+        background: #fdfdfd;
+        border-radius: 10px;
+
+        &_img {
+            border-radius: 6px;
+            width: 230px;
+            height: 280px;
+        }
+
+        &_content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        &_title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 133%;
+            color: #18121e;
+        }
+
+        &_text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;
+            color: #18121e;
+            flex-grow: 1;
+        }
+
+        &_date {
+            position: absolute;
+            bottom: 0;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 143%;
+            color: #f2be22;
+        }
+
+        &_link {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 143%;
+            color: #1a3e3e;
+            text-align: right;
+            cursor: pointer;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+}

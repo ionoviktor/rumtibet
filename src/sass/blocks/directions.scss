@@ -1,0 +1,110 @@
+.directions {
+    padding-top: 80px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    &__wrapper {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__card {
+        position: relative;
+        width: 380px;
+        height: 500px;
+        border-radius: 32px;
+
+        &_lake {
+            background: url('/src/img/directions/lake.jpg') center center / cover no-repeat;
+        }
+
+        &_night {
+            background: url('/src/img/directions/night.jpg') center center / cover no-repeat;
+        }
+
+        &_yoga {
+            background: url('/src/img/directions/yoga.jpg') center center / cover no-repeat;
+        }
+
+        &_grade {
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            right: 0;
+            margin-top: 50px;
+            border-radius: 4px 0 0 4px;
+            padding: 4px 8px;
+            width: 65px;
+            height: 32px;
+            backdrop-filter: blur(4px);
+            background: rgba(253, 253, 253, 0.4);
+
+            &-stars {
+                font-size: 20px;
+                color: #f2be22;
+            }
+
+            &-value {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 129%;
+                color: #1a3e3e;
+            }
+        }
+
+        &_footer {
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            backdrop-filter: blur(6px);
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 0 0 32px 32px;
+        }
+
+        &_title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            color: #fdfdfd;
+        }
+
+        &_text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            color: #fdfdfd;
+        }
+
+        &_price {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 120%;
+            color: #fdfdfd;
+            border-radius: 4px;
+            padding: 8px 16px;
+            width: 86px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+}
