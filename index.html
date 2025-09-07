@@ -242,7 +242,8 @@
                     </div>
                     <div class="footer__form_item">
                         <label for="email">Введите e-mail адрес</label>
-                        <input type="email" id="email" class="footer__form_input" placeholder="name@domain.com">
+                        <input type="email" id="email" name="email" class="footer__form_input"
+                            placeholder="name@domain.com">
                         <button class="btn btn-small footer__form_btn">Подписаться на новости</button>
                         <div class="footer__form_privacy">подписываясь на новости, вы автоматически соглашаетесь с
                             <a href="#">условиями обработки персональных данных</a> и <a href="#">правилами рекламных
@@ -257,13 +258,15 @@
                     <p class="footer__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть
                         более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
                     </p>
-                    <a href="#" class="footer__email">info@domain.com</a>
-                    <a href="#" class="footer__tel">+7 (999) 123-45-67</a>
+                    <div class="footer__contacts">
+                        <a href="#" class="footer__email">info@domain.com</a>
+                        <a href="#" class="footer__tel">+7 (999) 123-45-67</a>
+                    </div>
                     <div class="footer__socials">
-                        <a href="#" class="footer__social-link"><img src="/src/icons/telegram.svg" alt="telegram"></a>
-                        <a href="#" class="footer__social-link"><img src="/src/icons/vk.svg" alt="vk"></a>
-                        <a href="#" class="footer__social-link"><img src="/src/icons/pinterest.svg" alt="pinterest"></a>
-                        <a href="#" class="footer__social-link"><img src="/src/icons/skype.svg" alt="skype"></a>
+                        <a href="#" class="footer__socials-link icon-telegram"></a>
+                        <a href="#" class="footer__socials-link icon-vkontakte"></a>
+                        <a href="#" class="footer__socials-link icon-pinterest-circled"></a>
+                        <a href="#" class="footer__socials-link icon-skype"></a>
                     </div>
                 </div>
                 <div class="footer__services">
@@ -291,11 +294,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer__copyright">
+    </footer>
+    <div class="footer__copyright">
+        <div class="container">
+            <div class="footer__copyright_wrapper">
                 <p class="footer__copyright-text">ИП Константинопольский К.К., 2023</p>
                 <a class="footer__copyright-privacy" href="#">Политика обработки персональных данных</a>
             </div>
-    </footer>
+        </div>
+    </div>
 
 
     <script type="module" src="/src/js/script.js"></script>
